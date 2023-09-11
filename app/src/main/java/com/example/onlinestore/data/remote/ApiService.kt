@@ -18,5 +18,5 @@ interface ApiService {
     ): Call<List<Product>>
 
     @GET("products/{productId}")
-    fun fetchProductDetails(@Path("productId") productId: Int): Call<Product>
+    fun fetchProductById(@Path("productId") productId: Int): Call<Product>
 }
